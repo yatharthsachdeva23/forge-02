@@ -10,7 +10,7 @@ class TicketController extends Controller
 {
     /**
      * GET /api/tickets — list tickets for the authed user's org.
-     * Supports filtering by status, priority, and text search (subject + description).
+     * Supports filtering by status, priority, assignee_id, and text search.
      */
     public function index(Request $request)
     {
@@ -24,6 +24,11 @@ class TicketController extends Controller
         // Filter by priority
         if ($request->filled('priority')) {
             $query->where('priority', $request->string('priority'));
+        }
+
+        // Filter by assignee_id
+        if ($request->filled('assignee_id')) {
+            $query->where('assignee_id', $request->integer('assignee_id'));
         }
 
         // Text search on subject + description
@@ -51,6 +56,8 @@ class TicketController extends Controller
             'description' => ['required', 'string'],
             'priority' => ['sometimes', 'string', 'in:low,medium,high,urgent'],
             'assignee_id' => ['sometimes', 'nullable', 'integer', 'exists:users,id'],
+            'tags' => ['sometimes', 'array'],
+            'tags.*' => ['string', 'max:50'],
         ]);
 
         $ticket = Ticket::create([
@@ -58,6 +65,7 @@ class TicketController extends Controller
             'description' => $data['description'],
             'status' => 'open',
             'priority' => $data['priority'] ?? 'medium',
+            'tags' => $data['tags'] ?? null,
             'requester_id' => $request->user()->id,
             'assignee_id' => $data['assignee_id'] ?? null,
         ]);
@@ -76,16 +84,21 @@ class TicketController extends Controller
     }
 
     /**
-     * PUT /api/tickets/{id} — update status, priority, assignee_id.
+     * PUT /api/tickets/{id} — update status, priority, assignee_id, tags.
+     * Agent or admin only.
      */
     public function update(Request $request, int $id)
     {
+        $this->authorizeAgentOrAdmin($request);
+
         $ticket = Ticket::findOrFail($id);
 
         $data = $request->validate([
             'status' => ['sometimes', 'string', 'in:open,pending,resolved,closed'],
             'priority' => ['sometimes', 'string', 'in:low,medium,high,urgent'],
             'assignee_id' => ['sometimes', 'nullable', 'integer', 'exists:users,id'],
+            'tags' => ['sometimes', 'array'],
+            'tags.*' => ['string', 'max:50'],
         ]);
 
         $ticket->update($data);
@@ -95,9 +108,12 @@ class TicketController extends Controller
 
     /**
      * POST /api/tickets/{id}/assign — assign or claim a ticket.
+     * Agent or admin only.
      */
     public function assign(Request $request, int $id)
     {
+        $this->authorizeAgentOrAdmin($request);
+
         $ticket = Ticket::findOrFail($id);
 
         $data = $request->validate([
@@ -107,5 +123,31 @@ class TicketController extends Controller
         $ticket->update(['assignee_id' => $data['assignee_id']]);
 
         return response()->json($ticket);
+    }
+
+    /**
+     * DELETE /api/tickets/{id} — hard delete a ticket.
+     * Admin only.
+     */
+    public function destroy(Request $request, int $id)
+    {
+        if ($request->user()->role !== 'admin') {
+            abort(403, 'This action is restricted to administrators.');
+        }
+
+        $ticket = Ticket::findOrFail($id);
+        $ticket->delete();
+
+        return response()->noContent();
+    }
+
+    /**
+     * Block customers from agent/admin-only actions.
+     */
+    private function authorizeAgentOrAdmin(Request $request): void
+    {
+        if ($request->user()->role === 'customer') {
+            abort(403, 'This action is restricted to agents and administrators.');
+        }
     }
 }
