@@ -58,6 +58,12 @@ class CommentController extends Controller
             'is_internal' => $isInternal,
         ]);
 
+        \App\Models\ActivityLog::create([
+            'ticket_id' => $ticketId,
+            'user_id' => auth()->user()->id,
+            'action_description' => 'Comment added',
+        ]);
+
         return response()->json($comment, 201);
     }
 }
