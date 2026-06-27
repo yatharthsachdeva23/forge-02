@@ -21,11 +21,13 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Tickets
     Route::get('/tickets', [TicketController::class, 'index']);
+    Route::get('/tickets/metrics', [TicketController::class, 'metrics']);
     Route::post('/tickets', [TicketController::class, 'store']);
     Route::get('/tickets/{id}', [TicketController::class, 'show']);
     Route::put('/tickets/{id}', [TicketController::class, 'update']);
     Route::delete('/tickets/{id}', [TicketController::class, 'destroy']);
     Route::post('/tickets/{id}/assign', [TicketController::class, 'assign']);
+    Route::get('/tickets/{id}/activity', [TicketController::class, 'activity']);
 
     // Comments
     Route::get('/tickets/{ticket_id}/comments', [CommentController::class, 'index']);

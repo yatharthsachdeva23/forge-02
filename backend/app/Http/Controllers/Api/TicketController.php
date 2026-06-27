@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Ticket;
+use App\Models\ActivityLog;
+use App\Models\SlaPolicy;
 use Illuminate\Http\Request;
 
 class TicketController extends Controller
@@ -46,6 +48,32 @@ class TicketController extends Controller
     }
 
     /**
+     * GET /api/tickets/metrics — returns ticket counts grouped by status.
+     */
+    public function metrics(Request $request)
+    {
+        $counts = Ticket::query()
+            ->selectRaw('status, count(*) as count')
+            ->groupBy('status')
+            ->pluck('count', 'status')
+            ->toArray();
+
+        $statuses = ['open', 'pending', 'resolved', 'closed'];
+        $response = [];
+        $total = 0;
+
+        foreach ($statuses as $status) {
+            $count = $counts[$status] ?? 0;
+            $response[$status] = $count;
+            $total += $count;
+        }
+
+        $response['total'] = $total;
+
+        return response()->json($response);
+    }
+
+    /**
      * POST /api/tickets — create a ticket.
      * requester_id is forced to the authed user; org_id auto-stamped by TenantOwned.
      */
@@ -70,17 +98,31 @@ class TicketController extends Controller
             'assignee_id' => $data['assignee_id'] ?? null,
         ]);
 
+        // Write Activity Log
+        ActivityLog::create([
+            'ticket_id' => $ticket->id,
+            'user_id' => $request->user()->id,
+            'action_description' => 'Ticket created',
+        ]);
+
         return response()->json($ticket, 201);
     }
 
     /**
-     * GET /api/tickets/{id} — show a single ticket (TenantScope handles ownership).
+     * GET /api/tickets/{id} — show a single ticket with SLA eager loaded.
      */
     public function show(int $id)
     {
-        $ticket = Ticket::findOrFail($id);
+        $ticket = Ticket::with('requester', 'assignee')->findOrFail($id);
 
-        return response()->json($ticket);
+        $sla = SlaPolicy::where('organization_id', $ticket->organization_id)
+            ->where('priority', $ticket->priority)
+            ->first();
+
+        $response = $ticket->toArray();
+        $response['sla'] = $sla;
+
+        return response()->json($response);
     }
 
     /**
@@ -101,7 +143,30 @@ class TicketController extends Controller
             'tags.*' => ['string', 'max:50'],
         ]);
 
+        $oldStatus = $ticket->status;
+        $oldAssignee = $ticket->assignee_id;
+
         $ticket->update($data);
+
+        // Activity log for status change
+        if (isset($data['status']) && $ticket->status !== $oldStatus) {
+            ActivityLog::create([
+                'ticket_id' => $ticket->id,
+                'user_id' => $request->user()->id,
+                'action_description' => "Status changed from {$oldStatus} to {$ticket->status}",
+            ]);
+        }
+
+        // Activity log for assignee change
+        if (array_key_exists('assignee_id', $data) && $ticket->assignee_id !== $oldAssignee) {
+            $ticket->load('assignee');
+            $name = $ticket->assignee ? $ticket->assignee->name : 'Unassigned';
+            ActivityLog::create([
+                'ticket_id' => $ticket->id,
+                'user_id' => $request->user()->id,
+                'action_description' => "Assignee changed to {$name}",
+            ]);
+        }
 
         return response()->json($ticket);
     }
@@ -120,9 +185,37 @@ class TicketController extends Controller
             'assignee_id' => ['required', 'integer', 'exists:users,id'],
         ]);
 
+        $oldAssignee = $ticket->assignee_id;
+
         $ticket->update(['assignee_id' => $data['assignee_id']]);
 
+        if ($ticket->assignee_id !== $oldAssignee) {
+            $ticket->load('assignee');
+            $name = $ticket->assignee ? $ticket->assignee->name : 'Unassigned';
+            ActivityLog::create([
+                'ticket_id' => $ticket->id,
+                'user_id' => $request->user()->id,
+                'action_description' => "Assignee changed to {$name}",
+            ]);
+        }
+
         return response()->json($ticket);
+    }
+
+    /**
+     * GET /api/tickets/{id}/activity — get activity logs for the ticket.
+     */
+    public function activity(int $id)
+    {
+        // TenantScope handles safety boundary implicitly via Ticket resolution
+        $ticket = Ticket::findOrFail($id);
+
+        $logs = ActivityLog::where('ticket_id', $id)
+            ->with('user:id,name')
+            ->orderByDesc('created_at')
+            ->get();
+
+        return response()->json($logs);
     }
 
     /**
