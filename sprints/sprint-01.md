@@ -61,7 +61,7 @@ Create the five core tables with foreign keys + indexes, and their Eloquent mode
 **Owner:** OpenClaw · **Depends on:** #2
 Hard multi-tenant isolation, server-enforced.
 
-> **Design deviation (resolved):** Issue #2 shipped `comments` without an `organization_id` column. OpenClaw took a **transitive isolation** approach instead of adding the column: `Comment` does NOT use `TenantOwned`; comments are isolated via their parent `Ticket` (`$ticket->comments()`). Documented via docblock on `Comment`. ⚠️ **Risk:** direct `Comment::query()` calls bypass the tenant scope — Sprint 2 API controllers must always scope comments through a ticket. Do NOT call `Comment::all()` or `Comment::where()` directly in controller code.
+> **Design deviation (resolved):** Issue #2 shipped `comments` without an `organization_id` column. OpenClaw initially took a transitive-isolation approach; this was corrected in Issue #4's PR — `Comment` now uses `TenantOwned` with a dedicated `add_organization_id_to_comments` migration. ✅ Resolved.
 - `app/TenantScope.php`: a global Eloquent scope that appends `WHERE organization_id = Auth::user()->organization_id`.
 - `app/Traits/TenantOwned.php` trait: boots the scope on any model that uses it **and** auto-fills `organization_id` from the authenticated user on `create`.
 - Apply the trait to `User`, `Ticket`, `Comment`, `SlaPolicies` — every tenant-owned model. `Organization` is **not** scoped.
@@ -74,7 +74,8 @@ Hard multi-tenant isolation, server-enforced.
 
 ---
 
-### #4 — Sanctum auth + user roles — 🔵 ASSIGNED to OpenClaw (2026-06-27)
+### #4 — Sanctum auth + user roles — ✅ MERGED to `main` (2026-06-27)
+> **Minor gaps carried forward** (not blockers, but must be fixed in #5 or #6): (1) `config/sanctum.php` not published — Sanctum runs on defaults, acceptable but should be published. (2) `User` model missing `ROLE_ADMIN`/`ROLE_AGENT`/`ROLE_CUSTOMER` constants + `hasRole()` helper — needed by #5 seeder and #6 tests. (3) `/me` returns user only, not user + organization.
 **Owner:** OpenClaw · **Depends on:** #2
 - Configure Laravel Sanctum **token** authentication (stateless API tokens, not cookie sessions).
 - `User::role` cast as enum; gate/policy helpers for `admin`, `agent`, `customer`.
@@ -90,7 +91,7 @@ Hard multi-tenant isolation, server-enforced.
 
 ---
 
-### #5 — Database seeder
+### #5 — Database seeder — 🔵 ASSIGNED to OpenClaw (2026-06-27)
 **Owner:** OpenClaw · **Depends on:** #2, #4
 `DatabaseSeeder` that produces exactly:
 - 1 organization: **Acme**
