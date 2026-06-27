@@ -57,11 +57,11 @@ Create the five core tables with foreign keys + indexes, and their Eloquent mode
 
 ---
 
-### #3 — `TenantScope` global query scope  *(CORE SECURITY)* — 🔵 ASSIGNED to OpenClaw (2026-06-27)
+### #3 — `TenantScope` global query scope  *(CORE SECURITY)* — ✅ MERGED to `main` (2026-06-27)
 **Owner:** OpenClaw · **Depends on:** #2
 Hard multi-tenant isolation, server-enforced.
 
-> **Schema gap resolved here:** Issue #2 shipped `comments` without an `organization_id` column. To make `Comment` genuinely tenant-owned (per this issue's requirement), Issue #3 adds that column via a new migration. This is the only deviation from the Issue #2 schema, and it is required for uniform scope enforcement.
+> **Design deviation (resolved):** Issue #2 shipped `comments` without an `organization_id` column. OpenClaw took a **transitive isolation** approach instead of adding the column: `Comment` does NOT use `TenantOwned`; comments are isolated via their parent `Ticket` (`$ticket->comments()`). Documented via docblock on `Comment`. ⚠️ **Risk:** direct `Comment::query()` calls bypass the tenant scope — Sprint 2 API controllers must always scope comments through a ticket. Do NOT call `Comment::all()` or `Comment::where()` directly in controller code.
 - `app/TenantScope.php`: a global Eloquent scope that appends `WHERE organization_id = Auth::user()->organization_id`.
 - `app/Traits/TenantOwned.php` trait: boots the scope on any model that uses it **and** auto-fills `organization_id` from the authenticated user on `create`.
 - Apply the trait to `User`, `Ticket`, `Comment`, `SlaPolicies` — every tenant-owned model. `Organization` is **not** scoped.
@@ -74,7 +74,7 @@ Hard multi-tenant isolation, server-enforced.
 
 ---
 
-### #4 — Sanctum auth + user roles
+### #4 — Sanctum auth + user roles — 🔵 ASSIGNED to OpenClaw (2026-06-27)
 **Owner:** OpenClaw · **Depends on:** #2
 - Configure Laravel Sanctum **token** authentication (stateless API tokens, not cookie sessions).
 - `User::role` cast as enum; gate/policy helpers for `admin`, `agent`, `customer`.
