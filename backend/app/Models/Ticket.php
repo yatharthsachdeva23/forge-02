@@ -2,12 +2,15 @@
 
 namespace App\Models;
 
+use App\Models\Traits\TenantOwned;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Ticket extends Model
 {
+    use TenantOwned;
+
     protected $fillable = [
         'organization_id',
         'subject',

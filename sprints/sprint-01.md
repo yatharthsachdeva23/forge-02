@@ -37,7 +37,7 @@ Replace the empty `/backend` with a fresh Laravel 11 application (API-only, no B
 
 ---
 
-### #2 — Core migrations + Eloquent models
+### #2 — Core migrations + Eloquent models  ✅ MERGED to `main` (2026-06-27)
 **Owner:** OpenClaw · **Depends on:** #1
 Create the five core tables with foreign keys + indexes, and their Eloquent models, per the schema in `implementation_plan.md`:
 
@@ -57,9 +57,11 @@ Create the five core tables with foreign keys + indexes, and their Eloquent mode
 
 ---
 
-### #3 — `TenantScope` global query scope  *(CORE SECURITY)*
+### #3 — `TenantScope` global query scope  *(CORE SECURITY)* — 🔵 ASSIGNED to OpenClaw (2026-06-27)
 **Owner:** OpenClaw · **Depends on:** #2
 Hard multi-tenant isolation, server-enforced.
+
+> **Schema gap resolved here:** Issue #2 shipped `comments` without an `organization_id` column. To make `Comment` genuinely tenant-owned (per this issue's requirement), Issue #3 adds that column via a new migration. This is the only deviation from the Issue #2 schema, and it is required for uniform scope enforcement.
 - `app/TenantScope.php`: a global Eloquent scope that appends `WHERE organization_id = Auth::user()->organization_id`.
 - `app/Traits/TenantOwned.php` trait: boots the scope on any model that uses it **and** auto-fills `organization_id` from the authenticated user on `create`.
 - Apply the trait to `User`, `Ticket`, `Comment`, `SlaPolicies` — every tenant-owned model. `Organization` is **not** scoped.
