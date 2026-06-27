@@ -1,0 +1,1268 @@
+[
+    {
+        "subtype": "channel_join",
+        "user": "U0BCW7PS17S",
+        "text": "<@U0BCW7PS17S> has joined the channel",
+        "inviter": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782551253.881489"
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782551361.348719",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": ":mechanical_arm: _OpenClaw — Sprint 1, Issue #1 Complete_\n\n_Branch:_ `feature\/scaffold-laravel-11`\n\n_What I Did:_\n• Scaffolded fresh Laravel app in `\/backend` (API-only)\n• Preserved PulseDesk `.env.example` (mysql\/pulsedesk + `SANCTUM_STATEFUL_DOMAINS=127.0.0.1:5173`)\n• Installed: `laravel\/sanctum`, `pestphp\/pest`, `pestphp\/pest-plugin-laravel`\n• Published `config\/sanctum.php`\n• Deleted all default migrations — schema comes in Issue #2\n• Created `routes\/api.php` with `GET \/api\/health` → `{\"status\":\"ok\"}`\n• Wired API routes in `bootstrap\/app.php`\n• Pest test: 1 passed, 0 failures\n• Verified live: `GET \/api\/health` returns `200 {\"status\":\"ok\"}`\n\n_What's Left:_\n• Nothing — awaiting review and merge\n\n_Needs Your Call:_\n• Laravel 13 installed (not 11) due to security advisories blocking `laravel\/framework ^11.0` on Packagist. App is PHP 8.2+ compatible. If strict L11 required, let me know.\n• Ready for Issue #2 once merged.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "deleted": false,
+            "name": "Openclaw",
+            "updated": 1782540725,
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3kVDy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "mechanical_arm",
+                                "unicode": "1f9be"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "OpenClaw — Sprint 1, Issue #1 Complete",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Branch:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/scaffold-laravel-11",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What I Did:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Scaffolded fresh Laravel app in "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/backend",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " (API-only)\n• Preserved PulseDesk "
+                            },
+                            {
+                                "type": "text",
+                                "text": ".env.example",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " (mysql\/pulsedesk + "
+                            },
+                            {
+                                "type": "text",
+                                "text": "SANCTUM_STATEFUL_DOMAINS=127.0.0.1:5173",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ")\n• Installed: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "laravel\/sanctum",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ", "
+                            },
+                            {
+                                "type": "text",
+                                "text": "pestphp\/pest",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ", "
+                            },
+                            {
+                                "type": "text",
+                                "text": "pestphp\/pest-plugin-laravel",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Published "
+                            },
+                            {
+                                "type": "text",
+                                "text": "config\/sanctum.php",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Deleted all default migrations — schema comes in Issue #2\n• Created "
+                            },
+                            {
+                                "type": "text",
+                                "text": "routes\/api.php",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " with "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GET \/api\/health",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "{\"status\":\"ok\"}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Wired API routes in "
+                            },
+                            {
+                                "type": "text",
+                                "text": "bootstrap\/app.php",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Pest test: 1 passed, 0 failures\n• Verified live: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GET \/api\/health",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " returns "
+                            },
+                            {
+                                "type": "text",
+                                "text": "200 {\"status\":\"ok\"}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What's Left:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Nothing — awaiting review and merge\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Needs Your Call:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Laravel 13 installed (not 11) due to security advisories blocking "
+                            },
+                            {
+                                "type": "text",
+                                "text": "laravel\/framework ^11.0",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " on Packagist. App is PHP 8.2+ compatible. If strict L11 required, let me know.\n• Ready for Issue #2 once merged."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782556515.306049",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_Sprint 1, Issue #4 — Sanctum Token Auth + Roles: DONE_ :mechanical_arm:\n\n_What I Did:_\n• `POST \/api\/register` — creates user under org derived from `org_id`, hashes password, role defaults to `customer`, returns Sanctum token\n• `POST \/api\/login` — validates credentials, returns Sanctum token\n• `POST \/api\/logout` — revokes current token (`auth:sanctum`)\n• `GET \/api\/me` — returns authenticated user profile (`auth:sanctum`)\n• `AuthController` at `app\/Http\/Controllers\/Api\/AuthController.php`\n• `organization_id` always DB-derived via `findOrFail` — never trusted from client post-registration\n• Published `personal_access_tokens` migration\n• Added `HasApiTokens` + `HasFactory` traits, created `OrganizationFactory`, updated `UserFactory`\n• 10 tests (9 auth + 1 health), all passing :white_check_mark:\n\n_What's Left:_\nPR needs to be created from GitHub UI (no `gh` CLI on machine)\n\n_What Needs Your Call:_\nMerge `feature\/sanctum-auth` → `main`",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jThHt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 1, Issue #4 — Sanctum Token Auth + Roles: DONE",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "mechanical_arm",
+                                "unicode": "1f9be"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What I Did:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "POST \/api\/register",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — creates user under org derived from "
+                            },
+                            {
+                                "type": "text",
+                                "text": "org_id",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ", hashes password, role defaults to "
+                            },
+                            {
+                                "type": "text",
+                                "text": "customer",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ", returns Sanctum token\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "POST \/api\/login",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — validates credentials, returns Sanctum token\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "POST \/api\/logout",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — revokes current token ("
+                            },
+                            {
+                                "type": "text",
+                                "text": "auth:sanctum",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ")\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GET \/api\/me",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — returns authenticated user profile ("
+                            },
+                            {
+                                "type": "text",
+                                "text": "auth:sanctum",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ")\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "AuthController",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " at "
+                            },
+                            {
+                                "type": "text",
+                                "text": "app\/Http\/Controllers\/Api\/AuthController.php",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "organization_id",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " always DB-derived via "
+                            },
+                            {
+                                "type": "text",
+                                "text": "findOrFail",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — never trusted from client post-registration\n• Published "
+                            },
+                            {
+                                "type": "text",
+                                "text": "personal_access_tokens",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " migration\n• Added "
+                            },
+                            {
+                                "type": "text",
+                                "text": "HasApiTokens",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " + "
+                            },
+                            {
+                                "type": "text",
+                                "text": "HasFactory",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " traits, created "
+                            },
+                            {
+                                "type": "text",
+                                "text": "OrganizationFactory",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ", updated "
+                            },
+                            {
+                                "type": "text",
+                                "text": "UserFactory",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• 10 tests (9 auth + 1 health), all passing "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What's Left:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nPR needs to be created from GitHub UI (no "
+                            },
+                            {
+                                "type": "text",
+                                "text": "gh",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " CLI on machine)\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What Needs Your Call:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nMerge "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/sanctum-auth",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "main",
+                                "style": {
+                                    "code": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782556925.572489",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_Sprint 1, Issues #5 + #6 — DatabaseSeeder + Tenant Isolation Tests: DONE_ :mechanical_arm:\n\n_What I Did:_\n• DatabaseSeeder — 1 org (PulseDesk Support), 1 admin, 2 agents, 2 customers, 12 tickets (varied status\/priority), 4 SLA policies\n• `php artisan db:seed` runs clean :white_check_mark:\n• TenantIsolationTest — 4 tests:\n\n• Org-A user sees only Org-A tickets (Org-B invisible)\n• `findOrFail()` on Org-B ticket throws `ModelNotFoundException`\n• Creating ticket auto-stamps `organization_id` from authed user\n• Org-B user sees only Org-B tickets (reverse verification)\n• Added `HasFactory` to Ticket model + created `TicketFactory`\n• All 14 tests passing (9 auth + 1 health + 4 tenant isolation) :white_check_mark:\n\n_Branch:_ `feature\/seeder-and-tests` (pushed)\n_PR:_ <https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/seeder-and-tests>\n\n_What Needs Your Call:_\nCreate PR + merge when ready :pray:",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PdH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 1, Issues #5 + #6 — DatabaseSeeder + Tenant Isolation Tests: DONE",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "mechanical_arm",
+                                "unicode": "1f9be"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What I Did:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• DatabaseSeeder — 1 org (PulseDesk Support), 1 admin, 2 agents, 2 customers, 12 tickets (varied status\/priority), 4 SLA policies\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "php artisan db:seed",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " runs clean "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• TenantIsolationTest — 4 tests:\n\n• Org-A user sees only Org-A tickets (Org-B invisible)\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "findOrFail()",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " on Org-B ticket throws "
+                            },
+                            {
+                                "type": "text",
+                                "text": "ModelNotFoundException",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Creating ticket auto-stamps "
+                            },
+                            {
+                                "type": "text",
+                                "text": "organization_id",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " from authed user\n• Org-B user sees only Org-B tickets (reverse verification)\n• Added "
+                            },
+                            {
+                                "type": "text",
+                                "text": "HasFactory",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " to Ticket model + created "
+                            },
+                            {
+                                "type": "text",
+                                "text": "TicketFactory",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• All 14 tests passing (9 auth + 1 health + 4 tenant isolation) "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Branch:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/seeder-and-tests",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " (pushed)\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "PR:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/seeder-and-tests"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What Needs Your Call:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nCreate PR + merge when ready "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "pray",
+                                "unicode": "1f64f"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782557579.586489",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_Sprint 2 — Ticket\/Comment API Controllers + Tests: DONE_ :mechanical_arm:\n\n_What I Did:_\n\nTicketController:\n• `GET \/api\/tickets` — paginated, filters by status\/priority\/text search (subject+description)\n• `POST \/api\/tickets` — auto-sets `requester_id` to authed user, org_id via TenantOwned\n• `GET \/api\/tickets\/{id}` — TenantScope enforces org ownership\n• `PUT \/api\/tickets\/{id}` — update status\/priority\/assignee_id\n• `POST \/api\/tickets\/{id}\/assign` — set assignee_id\n\nCommentController:\n• `GET \/api\/tickets\/{ticket_id}\/comments` — customers filtered from internal comments\n• `POST \/api\/tickets\/{ticket_id}\/comments` — auto-stamps `user_id`, `is_internal` forced false for customers\n\n_Security tests:_\n:white_check_mark: Customer cannot see internal comments\n:white_check_mark: Customer cannot create internal comment (silently forced false)\n:white_check_mark: Cross-org access returns 404\n\n_Tests:_ 30\/30 passing (9 auth + 1 health + 4 tenant + 10 ticket API + 6 comment API)\n\n_Branch:_ `feature\/sprint2-api` (pushed)\n_PR:_ <https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/sprint2-api>\n\n_What Needs Your Call:_ Create PR + merge :pray:",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rfX=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 2 — Ticket\/Comment API Controllers + Tests: DONE",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "mechanical_arm",
+                                "unicode": "1f9be"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What I Did:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nTicketController:\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GET \/api\/tickets",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — paginated, filters by status\/priority\/text search (subject+description)\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "POST \/api\/tickets",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — auto-sets "
+                            },
+                            {
+                                "type": "text",
+                                "text": "requester_id",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " to authed user, org_id via TenantOwned\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GET \/api\/tickets\/{id}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — TenantScope enforces org ownership\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "PUT \/api\/tickets\/{id}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — update status\/priority\/assignee_id\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "POST \/api\/tickets\/{id}\/assign",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — set assignee_id\n\nCommentController:\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GET \/api\/tickets\/{ticket_id}\/comments",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — customers filtered from internal comments\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "POST \/api\/tickets\/{ticket_id}\/comments",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " — auto-stamps "
+                            },
+                            {
+                                "type": "text",
+                                "text": "user_id",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ", "
+                            },
+                            {
+                                "type": "text",
+                                "text": "is_internal",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " forced false for customers\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Security tests:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Customer cannot see internal comments\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Customer cannot create internal comment (silently forced false)\n"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Cross-org access returns 404\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Tests:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 30\/30 passing (9 auth + 1 health + 4 tenant + 10 ticket API + 6 comment API)\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Branch:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/sprint2-api",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " (pushed)\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "PR:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/sprint2-api"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What Needs Your Call:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " Create PR + merge "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "pray",
+                                "unicode": "1f64f"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782558341.994939",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_Sprint 3+4 — Full React Frontend: DONE_ :mechanical_arm:\n\n_What I Did:_\n\nScaffold:\n• Vite + React 19 + Tailwind CSS 4\n• Axios + lucide-react + react-router-dom\n• API client with auto token injection + 401 redirect\n\nAuth Client:\n• `\/login` + `\/register` pages with Tailwind cards\n• Token + user in localStorage\n• Auto-redirect unauthenticated → `\/login`\n\nDashboard:\n• Sidebar (PulseDesk, user profile, logout)\n• Top bar: status + priority filters + search\n• Ticket grid with colored status\/priority badges\n• Click to open thread detail\n\nTicket Thread Detail:\n• Subject, description, requester, assignee, priority\n• Comments from API\n• Comment form + \"Internal Note (Agent Only)\" checkbox\n• Internal comments: amber\/yellow background\n• Customers excluded from internal comments\n\nTicket Creation Modal:\n• Subject, description, priority\n• POST \/api\/tickets\n\n_Verified:_ `npm run dev` compiles and serves on localhost:3000 :white_check_mark:\n\n_Branch:_ `feature\/frontend-react` (pushed)\n_PR:_ <https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/frontend-react>\n\n_What Needs Your Call:_ Create PR + merge :pray:",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "H6wZh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 3+4 — Full React Frontend: DONE",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "mechanical_arm",
+                                "unicode": "1f9be"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What I Did:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nScaffold:\n• Vite + React 19 + Tailwind CSS 4\n• Axios + lucide-react + react-router-dom\n• API client with auto token injection + 401 redirect\n\nAuth Client:\n• "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/login",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " + "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/register",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " pages with Tailwind cards\n• Token + user in localStorage\n• Auto-redirect unauthenticated → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/login",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nDashboard:\n• Sidebar (PulseDesk, user profile, logout)\n• Top bar: status + priority filters + search\n• Ticket grid with colored status\/priority badges\n• Click to open thread detail\n\nTicket Thread Detail:\n• Subject, description, requester, assignee, priority\n• Comments from API\n• Comment form + \"Internal Note (Agent Only)\" checkbox\n• Internal comments: amber\/yellow background\n• Customers excluded from internal comments\n\nTicket Creation Modal:\n• Subject, description, priority\n• POST \/api\/tickets\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Verified:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "npm run dev",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " compiles and serves on localhost:3000 "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Branch:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/frontend-react",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " (pushed)\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "PR:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/frontend-react"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "What Needs Your Call:",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " Create PR + merge "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "pray",
+                                "unicode": "1f64f"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

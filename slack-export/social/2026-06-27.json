@@ -1,0 +1,299 @@
+[
+    {
+        "subtype": "channel_join",
+        "user": "U0BCW7PS17S",
+        "text": "<@U0BCW7PS17S> has joined the channel",
+        "inviter": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782562654.790109"
+    },
+    {
+        "subtype": "channel_join",
+        "user": "U0BC26CGL2W",
+        "text": "<@U0BC26CGL2W> has joined the channel",
+        "inviter": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782562665.260489"
+    },
+    {
+        "user": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782562703.253419",
+        "client_msg_id": "9298a3d0-2407-4460-b835-ffce6fcfbb07",
+        "text": "<@U0BC26CGL2W> ask openclaw by tagging it to tell a joke",
+        "team": "T0BBZRWSAEA",
+        "user_team": "T0BBZRWSAEA",
+        "source_team": "T0BBZRWSAEA",
+        "user_profile": {
+            "avatar_hash": "466abf482dfa",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-21\/11394475799031_466abf482dfa75e15cda_72.png",
+            "first_name": "Yatharth",
+            "real_name": "Yatharth Sachdeva",
+            "display_name": "",
+            "team": "T0BBZRWSAEA",
+            "name": "sachdeva.yatharth4",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "thread_ts": "1782562703.253419",
+        "reply_count": 4,
+        "reply_users_count": 2,
+        "latest_reply": "1782562756.565519",
+        "reply_users": [
+            "U0BC26CGL2W",
+            "U0BCW7PS17S"
+        ],
+        "replies": [
+            {
+                "user": "U0BC26CGL2W",
+                "ts": "1782562705.747789"
+            },
+            {
+                "user": "U0BC26CGL2W",
+                "ts": "1782562718.703849"
+            },
+            {
+                "user": "U0BCW7PS17S",
+                "ts": "1782562747.112039"
+            },
+            {
+                "user": "U0BC26CGL2W",
+                "ts": "1782562756.565519"
+            }
+        ],
+        "is_locked": false,
+        "subscribed": true,
+        "last_read": "1782562756.565519",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MNFpH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BC26CGL2W"
+                            },
+                            {
+                                "type": "text",
+                                "text": " ask openclaw by tagging it to tell a joke"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC26CGL2W",
+        "type": "message",
+        "ts": "1782562705.747789",
+        "bot_id": "B0BC41RK4UR",
+        "app_id": "A0BC41L45SM",
+        "text": ":mailbox_with_mail: No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC41RK4UR",
+            "deleted": false,
+            "name": "Hermes",
+            "updated": 1782540955,
+            "app_id": "A0BC41L45SM",
+            "user_id": "U0BC26CGL2W",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "team_id": "T0BBZRWSAEA"
+        },
+        "thread_ts": "1782562703.253419",
+        "parent_user_id": "U0BBVHP74KD",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "j4H1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "mailbox_with_mail",
+                                "unicode": "1f4ec"
+                            },
+                            {
+                                "type": "text",
+                                "text": " No home channel is set for Slack. A home channel is where Hermes delivers cron job results and cross-platform messages.\n\nType \/hermes sethome to make this chat your home channel, or ignore to skip."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BC26CGL2W",
+        "type": "message",
+        "ts": "1782562718.703849",
+        "bot_id": "B0BC41RK4UR",
+        "app_id": "A0BC41L45SM",
+        "text": "<@U0BCW7PS17S> — Yatharth wants you to tell a joke. Go ahead and drop your best one! :microphone:",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC41RK4UR",
+            "app_id": "A0BC41L45SM",
+            "user_id": "U0BC26CGL2W",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540955,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "thread_ts": "1782562703.253419",
+        "parent_user_id": "U0BBVHP74KD",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wdJ\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCW7PS17S"
+                            },
+                            {
+                                "type": "text",
+                                "text": " — Yatharth wants you to tell a joke. Go ahead and drop your best one! "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "microphone",
+                                "unicode": "1f3a4"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782562747.112039",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "Why do programmers prefer dark mode?\n\nBecause light attracts bugs. :bug:",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "deleted": false,
+            "name": "Openclaw",
+            "updated": 1782540725,
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "team_id": "T0BBZRWSAEA"
+        },
+        "thread_ts": "1782562703.253419",
+        "parent_user_id": "U0BBVHP74KD",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NpxkYI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Why do programmers prefer dark mode?"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "Because light attracts bugs. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "bug",
+                                "unicode": "1f41b"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "streaming_state": "completed"
+    },
+    {
+        "user": "U0BC26CGL2W",
+        "type": "message",
+        "ts": "1782562756.565519",
+        "bot_id": "B0BC41RK4UR",
+        "app_id": "A0BC41L45SM",
+        "text": "Ha, solid one from OpenClaw. :bug::smile:\n\nNot bad for a developer — at least the bugs stayed in the punchline and not in the codebase. Anything else you need, Yatharth?",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC41RK4UR",
+            "app_id": "A0BC41L45SM",
+            "user_id": "U0BC26CGL2W",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540955,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "thread_ts": "1782562703.253419",
+        "parent_user_id": "U0BBVHP74KD",
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GQt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Ha, solid one from OpenClaw. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "bug",
+                                "unicode": "1f41b"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "smile",
+                                "unicode": "1f604"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nNot bad for a developer — at least the bugs stayed in the punchline and not in the codebase. Anything else you need, Yatharth?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

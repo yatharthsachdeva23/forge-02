@@ -1,0 +1,116 @@
+[
+{
+    "id": "C0BCW707JF2",
+    "name": "social",
+    "created": 1782028855,
+    "creator": "U0BBVHP74KD",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBVHP74KD",
+        "U0BC26CGL2W",
+        "U0BCW7PS17S"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "Other channels are for work. This one’s just for fun. Get to know your teammates and show your lighter side. 🎈",
+        "creator": "U0BBVHP74KD",
+        "last_set": 1782028855
+    }
+},
+{
+    "id": "C0BCW73Q4P2",
+    "name": "sprint-main",
+    "created": 1782028910,
+    "creator": "U0BBVHP74KD",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBVHP74KD",
+        "U0BC26CGL2W",
+        "U0BCW7PS17S"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BBYGHUN4D",
+    "name": "human-review",
+    "created": 1782028955,
+    "creator": "U0BBVHP74KD",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBVHP74KD",
+        "U0BCW7PS17S"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BC1UC5RA6",
+    "name": "agent-log",
+    "created": 1782028934,
+    "creator": "U0BBVHP74KD",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBVHP74KD",
+        "U0BC26CGL2W",
+        "U0BCW7PS17S"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BBLE4JETH",
+    "name": "agent-coder",
+    "created": 1782028923,
+    "creator": "U0BBVHP74KD",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBVHP74KD",
+        "U0BC26CGL2W",
+        "U0BCW7PS17S"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+}
+]

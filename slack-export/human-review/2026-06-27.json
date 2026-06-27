@@ -1,0 +1,986 @@
+[
+    {
+        "subtype": "channel_join",
+        "user": "U0BCW7PS17S",
+        "text": "<@U0BCW7PS17S> has joined the channel",
+        "inviter": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782551264.936659"
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782551368.960959",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": ":mechanical_arm: _PR for Review — Sprint 1, Issue #1: Scaffold Laravel API_\n\n<https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/scaffold-laravel-11>\n\nBranch: `feature\/scaffold-laravel-11` → `main`\n\nSummary: Fresh Laravel app scaffolded in `\/backend` (API-only). Sanctum + Pest installed, health endpoint live at `GET \/api\/health`, all tests passing. Default migrations removed (schema comes in Issue #2).\n\nNote: Laravel 13 installed instead of 11 due to Packagist security advisories blocking `^11.0`. Still PHP 8.2+ compatible.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "deleted": false,
+            "name": "Openclaw",
+            "updated": 1782540725,
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uvM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "mechanical_arm",
+                                "unicode": "1f9be"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "PR for Review — Sprint 1, Issue #1: Scaffold Laravel API",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/scaffold-laravel-11"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nBranch: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/scaffold-laravel-11",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "main",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nSummary: Fresh Laravel app scaffolded in "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/backend",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " (API-only). Sanctum + Pest installed, health endpoint live at "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GET \/api\/health",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ", all tests passing. Default migrations removed (schema comes in Issue #2).\n\nNote: Laravel 13 installed instead of 11 due to Packagist security advisories blocking "
+                            },
+                            {
+                                "type": "text",
+                                "text": "^11.0",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": ". Still PHP 8.2+ compatible."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782551849.923389",
+        "client_msg_id": "16c108fc-fce8-4258-a4c4-89f24dc9ddd0",
+        "text": "<@U0BCW7PS17S> PR approved and merged to main. Great work. Issue #1 is complete.",
+        "team": "T0BBZRWSAEA",
+        "user_team": "T0BBZRWSAEA",
+        "source_team": "T0BBZRWSAEA",
+        "user_profile": {
+            "avatar_hash": "466abf482dfa",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-21\/11394475799031_466abf482dfa75e15cda_72.png",
+            "first_name": "Yatharth",
+            "real_name": "Yatharth Sachdeva",
+            "display_name": "",
+            "team": "T0BBZRWSAEA",
+            "name": "sachdeva.yatharth4",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "epEqC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCW7PS17S"
+                            },
+                            {
+                                "type": "text",
+                                "text": " PR approved and merged to main. Great work. Issue #1 is complete."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782551863.721309",
+        "edited": {
+            "user": "U0BCW7PS17S",
+            "ts": "1782551863.000000"
+        },
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "Acknowledged. Issue #1 closed, PR merged.\n\nStanding by for the next assignment from Hermes.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3Z\/k",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Acknowledged. Issue #1 closed, PR merged.\n\nStanding by for the next assignment from Hermes."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782556551.482249",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_PR — Sanctum Token Auth + Roles (Sprint 1, Issue #4)_\nBranch: `feature\/sanctum-auth` → `main`\nCreate PR here: <https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/sanctum-auth>\nStatus: 10\/10 tests passing :white_check_mark: | Awaiting PR creation + merge",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "r2zN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "PR — Sanctum Token Auth + Roles (Sprint 1, Issue #4)",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nBranch: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/sanctum-auth",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "main",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nCreate PR here: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/sanctum-auth"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nStatus: 10\/10 tests passing "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " | Awaiting PR creation + merge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782556931.342529",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_PR — DatabaseSeeder + Tenant Isolation Tests (Sprint 1, Issues #5, #6)_\nBranch: `feature\/seeder-and-tests` → `main`\nCreate PR here: <https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/seeder-and-tests>\nStatus: 14\/14 tests passing :white_check_mark: | Seeder verified :white_check_mark: | Awaiting PR creation + merge",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "K6uC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "PR — DatabaseSeeder + Tenant Isolation Tests (Sprint 1, Issues #5, #6)",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nBranch: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/seeder-and-tests",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "main",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nCreate PR here: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/seeder-and-tests"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nStatus: 14\/14 tests passing "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " | Seeder verified "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " | Awaiting PR creation + merge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782557019.103679",
+        "client_msg_id": "b0ed25cb-3850-4371-a3e6-bb9c5aba2706",
+        "text": "<@U0BCW7PS17S> PR approved &amp; merged — Sprint 1 Issue #4 (Sanctum Auth &amp; Roles)\nAll 10 tests (auth routes, register, login, logout, me) passing green locally. Database schemas and model-level traits validated. Main branch is updated.",
+        "team": "T0BBZRWSAEA",
+        "user_team": "T0BBZRWSAEA",
+        "source_team": "T0BBZRWSAEA",
+        "user_profile": {
+            "avatar_hash": "466abf482dfa",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-21\/11394475799031_466abf482dfa75e15cda_72.png",
+            "first_name": "Yatharth",
+            "real_name": "Yatharth Sachdeva",
+            "display_name": "",
+            "team": "T0BBZRWSAEA",
+            "name": "sachdeva.yatharth4",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UW7ri",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCW7PS17S"
+                            },
+                            {
+                                "type": "text",
+                                "text": " PR approved & merged — Sprint 1 Issue #4 (Sanctum Auth & Roles)\nAll 10 tests (auth routes, register, login, logout, me) passing green locally. Database schemas and model-level traits validated. Main branch is updated."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782557034.161419",
+        "edited": {
+            "user": "U0BCW7PS17S",
+            "ts": "1782557034.000000"
+        },
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "Good news. Issue #4 (Sanctum Auth &amp; Roles) is merged and green. :white_check_mark:\n\nSprint 1 issues #1 and #4 now closed out. Ready for the next assignment whenever Hermes has one.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "I=DhX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Good news. Issue #4 (Sanctum Auth & Roles) is merged and green. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nSprint 1 issues #1 and #4 now closed out. Ready for the next assignment whenever Hermes has one."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782557586.890189",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_PR — Sprint 2 API Controllers (Ticket + Comment)_\nBranch: `feature\/sprint2-api` → `main`\nCreate PR here: <https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/sprint2-api>\nStatus: 30\/30 tests passing :white_check_mark: | Awaiting PR creation + merge",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SdU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "PR — Sprint 2 API Controllers (Ticket + Comment)",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nBranch: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/sprint2-api",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "main",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nCreate PR here: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/sprint2-api"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nStatus: 30\/30 tests passing "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " | Awaiting PR creation + merge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782557745.045039",
+        "client_msg_id": "40601203-590d-4a8f-baf2-ff80f762274a",
+        "text": "<@U0BCW7PS17S> PR approved &amp; merged — Sprint 1 Issue #5 and #6",
+        "team": "T0BBZRWSAEA",
+        "user_team": "T0BBZRWSAEA",
+        "source_team": "T0BBZRWSAEA",
+        "user_profile": {
+            "avatar_hash": "466abf482dfa",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-21\/11394475799031_466abf482dfa75e15cda_72.png",
+            "first_name": "Yatharth",
+            "real_name": "Yatharth Sachdeva",
+            "display_name": "",
+            "team": "T0BBZRWSAEA",
+            "name": "sachdeva.yatharth4",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bwGnt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCW7PS17S"
+                            },
+                            {
+                                "type": "text",
+                                "text": " PR approved & merged — Sprint 1 Issue #5 and #6"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782557766.048839",
+        "edited": {
+            "user": "U0BCW7PS17S",
+            "ts": "1782557766.000000"
+        },
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "Sprint 1 issues #5 and #6 merged. That's #1, #4, #5, and #6 all closed out now. :dart:\n\nReady for the next batch.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dnz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 1 issues #5 and #6 merged. That's #1, #4, #5, and #6 all closed out now. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "dart",
+                                "unicode": "1f3af"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nReady for the next batch."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782558020.445859",
+        "client_msg_id": "5feb67cd-d90e-41b5-86c6-416fbaf158ea",
+        "text": "<@U0BCW7PS17S> PR approved &amp; merged — Sprint 2 issue #1 and #2",
+        "team": "T0BBZRWSAEA",
+        "user_team": "T0BBZRWSAEA",
+        "source_team": "T0BBZRWSAEA",
+        "user_profile": {
+            "avatar_hash": "466abf482dfa",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-21\/11394475799031_466abf482dfa75e15cda_72.png",
+            "first_name": "Yatharth",
+            "real_name": "Yatharth Sachdeva",
+            "display_name": "",
+            "team": "T0BBZRWSAEA",
+            "name": "sachdeva.yatharth4",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KMQYv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCW7PS17S"
+                            },
+                            {
+                                "type": "text",
+                                "text": " PR approved & merged — Sprint 2 issue #1 and #2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782558058.525789",
+        "edited": {
+            "user": "U0BCW7PS17S",
+            "ts": "1782558060.000000"
+        },
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "Sprint 2 issues #1 and #2 merged. :white_check_mark:\n\nSprint 1: #1, #4, #5, #6 — done\nSprint 2: #1, #2 — done\n\nRolling. Ready for the next.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aOq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprint 2 issues #1 and #2 merged. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nSprint 1: #1, #4, #5, #6 — done\nSprint 2: #1, #2 — done\n\nRolling. Ready for the next."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782558349.631609",
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "_PR — Sprint 3+4 React Frontend_\nBranch: `feature\/frontend-react` → `main`\nCreate PR here: <https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/frontend-react>\nStatus: `npm run dev` verified :white_check_mark: | Awaiting PR creation + merge",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TuhG7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "PR — Sprint 3+4 React Frontend",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nBranch: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "feature\/frontend-react",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "main",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nCreate PR here: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yatharthsachdeva23\/forge-02\/pull\/new\/feature\/frontend-react"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nStatus: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "npm run dev",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " verified "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": " | Awaiting PR creation + merge"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBVHP74KD",
+        "type": "message",
+        "ts": "1782558607.355969",
+        "client_msg_id": "1c05064e-42db-4522-b41b-a8c3cafebe6a",
+        "text": "<@U0BCW7PS17S> PR approved &amp; merged — Sprints 3 &amp; 4 (React Frontend &amp; Dashboard UI)\nVite React SPA fully scaffolded. Login\/registration flows, ticket dashboard with status\/priority filters and text search, detail panel threads (with customer-agent note visibility bounds), and creation modal verified working on localhost:3000.",
+        "team": "T0BBZRWSAEA",
+        "user_team": "T0BBZRWSAEA",
+        "source_team": "T0BBZRWSAEA",
+        "user_profile": {
+            "avatar_hash": "466abf482dfa",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2026-06-21\/11394475799031_466abf482dfa75e15cda_72.png",
+            "first_name": "Yatharth",
+            "real_name": "Yatharth Sachdeva",
+            "display_name": "",
+            "team": "T0BBZRWSAEA",
+            "name": "sachdeva.yatharth4",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aSKYZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BCW7PS17S"
+                            },
+                            {
+                                "type": "text",
+                                "text": " PR approved & merged — Sprints 3 & 4 (React Frontend & Dashboard UI)\nVite React SPA fully scaffolded. Login\/registration flows, ticket dashboard with status\/priority filters and text search, detail panel threads (with customer-agent note visibility bounds), and creation modal verified working on localhost:3000."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BCW7PS17S",
+        "type": "message",
+        "ts": "1782558666.094889",
+        "edited": {
+            "user": "U0BCW7PS17S",
+            "ts": "1782558668.000000"
+        },
+        "bot_id": "B0BC1UXMV7C",
+        "app_id": "A0BBVHY9XCK",
+        "text": "Sprints 3 &amp; 4 (React Frontend &amp; Dashboard UI) merged. Frontend is alive. :tada:\n\nFull scorecard so far:\n\n• Sprint 1: #1, #4, #5, #6 :white_check_mark:\n• Sprint 2: #1, #2 :white_check_mark:\n• Sprint 3 &amp; 4: React SPA, dashboard, ticket flows :white_check_mark:\n\nReady for whatever's next.",
+        "team": "T0BBZRWSAEA",
+        "bot_profile": {
+            "id": "B0BC1UXMV7C",
+            "app_id": "A0BBVHY9XCK",
+            "user_id": "U0BCW7PS17S",
+            "name": "Openclaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782540725,
+            "team_id": "T0BBZRWSAEA"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/=gj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sprints 3 & 4 (React Frontend & Dashboard UI) merged. Frontend is alive. "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "tada",
+                                "unicode": "1f389"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nFull scorecard so far:\n\n• Sprint 1: #1, #4, #5, #6 "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Sprint 2: #1, #2 "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n• Sprint 3 & 4: React SPA, dashboard, ticket flows "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "white_check_mark",
+                                "unicode": "2705"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nReady for whatever's next."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
