@@ -88,7 +88,27 @@ class DatabaseSeeder extends Seeder
         ];
 
         foreach ($tickets as $ticket) {
-            Ticket::create(array_merge($ticket, ['organization_id' => $org->id]));
+            $createdTicket = Ticket::create(array_merge($ticket, ['organization_id' => $org->id]));
+
+            // Add a public comment from the customer
+            \App\Models\Comment::create([
+                'organization_id' => $org->id,
+                'ticket_id' => $createdTicket->id,
+                'user_id' => $createdTicket->requester_id,
+                'body' => "This is a follow-up comment for ticket: {$createdTicket->subject}.",
+                'is_internal' => false,
+            ]);
+
+            // Add an internal comment from the assignee (if assigned)
+            if ($createdTicket->assignee_id) {
+                \App\Models\Comment::create([
+                    'organization_id' => $org->id,
+                    'ticket_id' => $createdTicket->id,
+                    'user_id' => $createdTicket->assignee_id,
+                    'body' => "Internal note: Reviewing logs for this request.",
+                    'is_internal' => true,
+                ]);
+            }
         }
     }
 }

@@ -17,6 +17,10 @@ class User extends Authenticatable
     use Notifiable;
     use TenantOwned;
 
+    public const ROLE_ADMIN = 'admin';
+    public const ROLE_AGENT = 'agent';
+    public const ROLE_CUSTOMER = 'customer';
+
     protected $fillable = ['organization_id', 'name', 'email', 'password', 'role'];
 
     protected $hidden = ['password', 'remember_token'];
@@ -39,5 +43,14 @@ class User extends Authenticatable
     public function comments(): HasMany
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function hasRole(string|array $roles): bool
+    {
+        if (is_array($roles)) {
+            return in_array($this->role, $roles);
+        }
+
+        return $this->role === $roles;
     }
 }
