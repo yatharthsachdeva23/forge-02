@@ -333,14 +333,14 @@ function TicketDetail({ ticketId, onBack, user }) {
         <div className="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3 mb-3">
             <span className="text-xs font-semibold text-slate-400 uppercase">Description</span>
-            {ticket.sla && (
+            {ticket.sla?.resolution_time_hours && (
               <span className={`text-xs font-semibold px-2.5 py-1 rounded-lg flex items-center gap-1
                 ${ticket.priority === 'urgent' ? 'bg-red-50 text-red-600 border border-red-200' : 
                   ticket.priority === 'high' ? 'bg-orange-50 text-orange-600 border border-orange-200' :
                   ticket.priority === 'medium' ? 'bg-blue-50 text-blue-600 border border-blue-200' :
                   'bg-slate-50 text-slate-600 border border-slate-200'}`}
               >
-                SLA: {ticket.sla.resolution_time_hours}h Resolution Target
+                <Clock size={12} /> SLA: {ticket.sla.resolution_time_hours}h Resolution Target
               </span>
             )}
           </div>
