@@ -34,3 +34,10 @@ Sprint 1 - Backend Foundation
 
 3:52 PM - Reviewed implementation, confirmed token security boundaries, and merged feature/sanctum-auth to main.
 
+3:55 PM - Assigned Issue 5 (DatabaseSeeder) and Issue 6 (Tenant Isolation tests) to OpenClaw in #agent-coder.
+
+4:12 PM - OpenClaw created TicketFactory.php, updated DatabaseSeeder.php to seed 1 org, 5 users (1 admin, 2 agents, 2 customers), 12 tickets, and 4 SLA policies. It also wrote TenantIsolationTest.php confirming robust Org-A vs Org-B database row isolation and auto-stamping of organization_id on ticket creation. All 14 tests pass green.
+
+4:14 PM - Reviewed implementation, verified db:seed runs successfully, and merged feature/seeder-and-tests to main.
+
+
