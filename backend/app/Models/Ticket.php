@@ -19,8 +19,13 @@ class Ticket extends Model
         'description',
         'status',
         'priority',
+        'tags',
         'requester_id',
         'assignee_id',
+    ];
+
+    protected $casts = [
+        'tags' => 'array',
     ];
 
     public function organization(): BelongsTo

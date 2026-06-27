@@ -87,6 +87,10 @@ class DatabaseSeeder extends Seeder
             ['subject' => 'Dark mode flicker',             'description' => 'UI flickers between light and dark mode on refresh.',         'status' => 'resolved', 'priority' => 'low',    'requester_id' => $customer2->id, 'assignee_id' => null],
         ];
 
+        // Add tags to two tickets for demonstration
+        $tickets[0]['tags'] = ['bug', 'login', 'P1'];
+        $tickets[4]['tags'] = ['feature-request', 'UI'];
+
         foreach ($tickets as $ticket) {
             $createdTicket = Ticket::create(array_merge($ticket, ['organization_id' => $org->id]));
 
@@ -110,5 +114,28 @@ class DatabaseSeeder extends Seeder
                 ]);
             }
         }
+
+        // Seed 2 tickets with tags
+        Ticket::create([
+            'organization_id' => $org->id,
+            'subject' => 'Bug: Search results empty',
+            'description' => 'Search returns no results for valid queries.',
+            'status' => 'open',
+            'priority' => 'high',
+            'tags' => json_encode(['bug', 'search', 'frontend']),
+            'requester_id' => $customer1->id,
+            'assignee_id' => $agent1->id,
+        ]);
+
+        Ticket::create([
+            'organization_id' => $org->id,
+            'subject' => 'Feature: Dark mode toggle',
+            'description' => 'Add a dark mode toggle in settings.',
+            'status' => 'open',
+            'priority' => 'low',
+            'tags' => json_encode(['feature', 'ui']),
+            'requester_id' => $customer2->id,
+            'assignee_id' => null,
+        ]);
     }
 }
