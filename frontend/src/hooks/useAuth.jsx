@@ -1,4 +1,5 @@
-import { createContext, useContext, useState, useEffect } from 'react'
+import { createContext, useContext, useState } from 'react'
+import api from '../api/client.js'
 
 const AuthContext = createContext(null)
 
@@ -15,11 +16,18 @@ export function AuthProvider({ children }) {
     setUser(data.user)
   }
 
-  const logout = () => {
-    localStorage.removeItem('token')
-    localStorage.removeItem('user')
-    setToken(null)
-    setUser(null)
+  const logout = async () => {
+    try {
+      // Revoke the Sanctum token server-side first
+      await api.post('/api/logout')
+    } catch {
+      // Even if the API call fails, clear local session
+    } finally {
+      localStorage.removeItem('token')
+      localStorage.removeItem('user')
+      setToken(null)
+      setUser(null)
+    }
   }
 
   return (
