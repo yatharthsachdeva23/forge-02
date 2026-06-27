@@ -40,4 +40,11 @@ Sprint 1 - Backend Foundation
 
 4:14 PM - Reviewed implementation, verified db:seed runs successfully, and merged feature/seeder-and-tests to main.
 
+4:15 PM - Assigned Sprint 2 (Ticket and Comment API Endpoints & Tests) to OpenClaw in #agent-coder.
+
+4:32 PM - OpenClaw created TicketController.php, CommentController.php, and added all REST endpoints under the auth:sanctum group. It also wrote CommentApiTest.php and TicketApiTest.php.
+
+4:35 PM - Reviewed implementation, verified 30/30 Pest tests passing green, and merged feature/sprint2-api to main.
+
+
 
