@@ -23,3 +23,7 @@ Sprint 1 - Backend Foundation
 3:15 PM - Reviewed and confirmed the code was correct. Merged the PR to main.
 
 3:20 PM - Assigned Issue 3 to OpenClaw in #agent-coder. Asked it to implement TenantScope global query scope and TenantOwned trait, and apply them to the tenant models.
+
+3:28 PM - OpenClaw created TenantScope.php in app/Models/Scopes and TenantOwned.php in app/Models/Traits. Applied the trait to User, Ticket, Comment, and SlaPolicy models. The scope correctly filters all queries by organization_id when a user is authenticated and gracefully skips filtering during seeder runs when no auth context exists.
+
+3:30 PM - Reviewed the code, confirmed security implementation is correct. Merged PR to main.
