@@ -36,7 +36,7 @@ Built with a **Laravel 11 REST API** backend and a **React 19 + Vite** frontend.
    DB_PORT=3306
    DB_DATABASE=pulsedesk
    DB_USERNAME=root
-   DB_PASSWORD=Yatharth@2006
+   DB_PASSWORD=YOUR_DB_PASSWORD
    ```
 4. Install dependencies:
    ```bash
